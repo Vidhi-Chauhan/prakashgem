@@ -3,7 +3,7 @@ import TabsetPanel from "./TabsetPanel";
 import videoFile from "../assets/videos/jwelleryvideo3.mp4";
 import "../main.js"; // If main.js is one level up
 import connect from "../assets/connect-withus.webp";
-import store from "../assets/store.webp";
+import store from "../assets/Store.webp";
 
 import HomeSlider from "./HomeSlider";
 import TestimonialSlider from "./TestimonialSlider";
