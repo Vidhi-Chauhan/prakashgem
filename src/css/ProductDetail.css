@@ -1,0 +1,129 @@
+.product-detail .image-detail img {
+  height: auto;
+}
+.product-detail .image-detail {
+  width: 43%;
+}
+
+.product-detail .product-info {
+  width: 57%;
+  padding-left: 80px;
+}
+.product-detail .product-info h1 {
+  font-weight: 700;
+}
+.product-detail .product-info span.price {
+  font-size: 20px;
+  color: #414141;
+}
+.product-detail .product-info span.taxes {
+  margin-left: 10px;
+  color: #868686;
+  font-size: 14px;
+}
+.product-detail .product-info .product-desc ul {
+  list-style: inside;
+  font-size: 14px;
+}
+.product-detail .product-info .product-desc {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0px;
+}
+.promise_tags {
+  display: grid;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 0.4rem;
+  grid-template-columns: 1.2fr 1fr;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0px;
+}
+.product__policies {
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.product__policies img {
+  width: 40px;
+  height: 40px;
+}
+.product__policies .tag {
+  color: #121212;
+  font-size: 1rem;
+}
+
+.product-detail .product-info .product-desc ul li {
+  padding: 2px 0px;
+}
+.product-detail .product-info .add-to-cart-btn button.cart {
+  background: #001e38;
+  display: inline;
+  color: #fff;
+  width: 80%;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.product-detail .product-info .add-to-cart-btn button.cart:hover {
+  background-color: #ed2939 !important;
+}
+.product-detail .product-info .add-to-cart-btn button.wishlist {
+  border: 2px solid #001e38;
+  padding: 6px 10px;
+  margin-left: 30px;
+}
+.product-detail .product-info .add-to-cart-btn button.wishlist:hover {
+  border: 2px solid #ed2939 !important;
+  color: #ed2939 !important;
+}
+.product-detail .product-info .share-link a {
+  border: 1px solid #e6e6e6 !important;
+  margin: 0 8px;
+  vertical-align: top;
+  transition: all 0.5s ease;
+  padding: 22px;
+}
+.product-detail .product-info .share-link a:hover {
+  transform: translateY(-5px);
+
+  border: 1px solid #ed2939 !important;
+}
+.product-detail .product-info .share-link a:hover i {
+  color: #ed2939 !important ;
+}
+.product-detail .product-info .share-link p {
+  align-self: center;
+}
+.product-detail .product-info .share-link a i {
+  color: #001e38;
+}
+.shipping-info .shipping .ship-img {
+  background-image: url("https://www.palmonas.com/cdn/shop/files/worlwide_shipping_icon_891b83ec-41af-40db-b5cf-5bbc185ca67b.png?v=1714718664&width=180");
+}
+.shipping-info .shipping .exchange-img {
+  background-image: url("https://www.palmonas.com/cdn/shop/files/exchange_icon_a0a93042-c24c-4f82-bf03-91b43e4bccc2.png?v=1714718664&width=180");
+}
+.shipping-info .shipping .payment-img {
+  background-image: url("https://www.palmonas.com/cdn/shop/files/safe_payment.png?v=1714718664&width=180");
+}
+.shipping-info .shipping .support-img {
+  background-image: url("https://www.palmonas.com/cdn/shop/files/service_icon_b7e4d7f8-c017-4ece-a5d7-6491b258c6e7.png?v=1714718664&width=180");
+}
+.shipping-info .shipping .inner-image {
+  width: 49px;
+  height: 49px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0 auto 20px;
+}
+.shipping-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.shipping-info .shipping .desc {
+  font-size: 14px;
+}

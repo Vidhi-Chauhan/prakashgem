@@ -1,0 +1,66 @@
+/* Container styling */
+.checkout {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 85%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+  margin-top: 20px;
+  background: #001e38;
+  border: 1px solid #001e38;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"]:hover {
+  background: #ed2939;
+  border: 1px solid #ed2939;
+}
+
+/* Total amount styling */
+.checkout .total {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}

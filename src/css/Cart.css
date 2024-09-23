@@ -1,0 +1,99 @@
+.cart {
+  width: 100%;
+  border-right: 1px solid rgb(233, 233, 233);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding: 22px 12px;
+  background-color: rgb(245 245 245);
+  border-radius: 25px;
+}
+.cart .delete-icon b {
+  padding: 4px 8px;
+  color: #fff;
+  background: #001e38;
+  border-radius: 50%;
+}
+
+.cart .product-image {
+  width: 22%;
+}
+.cart .product-detail {
+  width: 63%;
+}
+.cart .delete-icon {
+  width: 15%;
+}
+.cart .product-image img {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+}
+.cart .product-detail .product-name {
+  font-size: 14px;
+}
+.cart .product-detail .price {
+  font-size: 14px;
+}
+.cart .product-detail .sku {
+  font-size: 10px;
+  margin-top: 8px;
+}
+.cart .product-detail .gold-purity {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.cart .product-detail .quantity {
+  font-size: 12px;
+}
+.cart .product-detail .expected-date {
+  font-size: 12px;
+}
+.cart-section .cart-billing {
+  width: 33%;
+  margin-left: 20px;
+  padding: 20px;
+  height: 235px;
+  border-radius: 25px;
+}
+.cart-section .cart-billing .place-order .checkout {
+  width: 100%;
+  background: #001e38;
+  color: #fff;
+  border: 1px solid #001e38;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cart-section .cart-billing .place-order .checkout:hover {
+  background: #ed2939 !important;
+  border: 1px solid #ed2939;
+}
+.cart-section .cart-billing .coupon-code button:hover {
+  background: #ed2939 !important;
+  border: 1px solid #ed2939;
+}
+.cart-section .product-cart {
+  width: 63%;
+  margin-right: 20px;
+}
+.cart-section .cart-billing .coupon-code input {
+  border: 1px solid #80808057;
+  padding: 4px;
+  border-radius: 5px;
+}
+.cart-section .cart-billing .coupon-code button {
+  background-color: #001e38;
+  border: 1px solid #001e38;
+  color: #fff;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.cart-section .cart-billing {
+  background-color: rgb(245 245 245);
+}
+.cart-section .cart-billing .price-detail {
+  font-size: 14px;
+}
+.cart-section .cart-billing .price-detail .total-text,
+.cart-section .cart-billing .price-detail .total-price {
+  font-size: 16px !important;
+}
