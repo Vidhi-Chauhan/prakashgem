@@ -38,7 +38,7 @@ const MobileHeader = () => {
 
           {/* Sliding Mobile Menu */}
           <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-            <div className="menu-content max-h-[400px] overflow-y-auto">
+            <div className="menu-content overflow-y-auto">
               {/* Close icon inside the menu */}
               <button className="close-menu" onClick={closeMobileMenu}>
                 <IoClose size={24} />

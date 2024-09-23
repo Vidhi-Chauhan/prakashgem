@@ -30,17 +30,17 @@ const MainHeader = () => {
               <img src={logo} alt="" className="logo" />
             </a>
             <ul className="flex space-x-4 menu-list">
-              <li>
+              <li className="menuitem">
                 <a href="#" className="menu-item" id="categories">
                   Categories
                 </a>
               </li>
-              <li>
+              <li className="menuitem">
                 <a href="#" className="menu-item" id="store">
                   Store
                 </a>
               </li>
-              <li className="group relative">
+              <li className="group relative menuitem">
                 <Link to="/listing" className="menu-item" id="gemstones">
                   Gemstones
                 </Link>
@@ -364,29 +364,29 @@ const MainHeader = () => {
                 </div>
               </li>
 
-              <li>
+              <li className="menuitem">
                 <a href="#" className="menu-item" id="rudrakshas">
                   Rudrakshas
                 </a>
               </li>
-              <li className="group relative">
+              <li className="group relative menuitem">
                 <a href="#" className="menu-item" id="mala">
                   Mala
                 </a>
-                <ul className="absolute left-0 mt-2 hidden bg-white group-hover:block w-48">
+                {/* <ul className="absolute left-0 mt-2 hidden bg-white group-hover:block w-48">
                   <li>
                     <a href="#" className="submenu-item" id="japa-mala">
                       Japa Mala
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
-              <li>
+              <li className="menuitem">
                 <Link to="/about" className="menu-item" id="about-us">
                   About Us
                 </Link>
               </li>
-              <li>
+              <li className="menuitem">
                 <Link to="/contact" className="menu-item" id="contact-us">
                   Contact Us
                 </Link>

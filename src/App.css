@@ -183,7 +183,7 @@ h2:before {
   margin-top: -10px;
 }
 .mega-menu {
-  top: 52px;
+  top: 91px;
   left: -210px;
   text-align: left;
   padding-bottom: 40px;
@@ -253,6 +253,8 @@ h2:before {
 .main-menu .menu-list .menu-item {
   color: #1f3044;
   font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-weight: 600;
 }
 .main-menu .menu-list li {
@@ -945,6 +947,11 @@ button.browse-all:hover {
 
 .leaflet-container {
   z-index: 0;
+}
+.menu-list .menuitem {
+  display: flex;
+  height: 101px;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
