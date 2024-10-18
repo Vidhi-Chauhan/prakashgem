@@ -1,9 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { IoSearch, IoPersonOutline, IoCartOutline } from "react-icons/io5";
-import { LuRefreshCcw } from "react-icons/lu";
-
-import { FaRegHeart } from "react-icons/fa";
 
 const Header = () => {
   return (
