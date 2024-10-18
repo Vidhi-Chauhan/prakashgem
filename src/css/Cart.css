@@ -47,22 +47,251 @@
 .cart .product-detail .expected-date {
   font-size: 12px;
 }
-.cart-section .cart-billing {
+.cart-section .billing-section {
   width: 33%;
   margin-left: 20px;
+}
+.coupon-code {
+  cursor: pointer;
+}
+
+.coupon-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+  background-color: white;
   padding: 20px;
-  height: 235px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.apply-coupon {
+  margin-right: 10px;
+}
+.css-1sqy1tp {
+  position: relative;
+  border-radius: 12px;
+  margin: 0px auto;
+  width: 100%;
+}
+.css-1cez3ir {
+  position: relative;
+  border-radius: 12px;
+  background: rgb(246, 243, 249);
+  width: 100%;
+  height: 48px;
+}
+.css-jcaw3i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-family: InterRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  color: #001e38;
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 18px);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+.css-1v1lvtj {
+  font-size: 12px;
+  text-align: left;
+  color: #001e38;
+  padding: 0px 16px;
+  margin: 0px;
+  line-height: 2;
+  width: 100%;
+  height: inherit;
+  border: 1px solid rgb(246, 243, 249);
+  border-radius: 12px;
+  cursor: text;
+  outline: none;
+  background: transparent;
+}
+.css-1sqy1tp button {
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #001e38;
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  cursor: pointer;
+}
+.css-1sqy1tp button:hover {
+  color: #ed2939;
+}
+.css-esqegb {
+  background: rgb(246, 243, 249);
+  border-radius: 24px 24px 0px 0px;
+  padding: 0px 5px;
+  overflow: hidden;
+}
+.css-ojiic0 {
+  max-height: calc(-136px + 70vh);
+  padding-bottom: 30px;
+  overflow: hidden auto;
+}
+.css-fle3r0 {
+  padding: 0px 15px 16px;
+}
+.css-1cfmwn2 {
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: rgb(78, 85, 94);
+  margin-bottom: 11px;
+  text-align: center;
+}
+.css-cu2au0 {
+  min-height: 110px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(206, 194, 205, 0.5) 0px 0px 5px;
+  border-radius: 20px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 24px;
+}
+.css-cu2au0::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background: rgb(246, 243, 249);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.css-1753rni {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  width: 55px;
+}
+.css-1j3ll8k {
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 70%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  word-break: break-word;
+}
+.css-1hiy7gv {
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(175, 174, 176);
+  font-size: 10px;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+.css-cu2au0::after {
+  content: "";
+  position: absolute;
+  background: rgb(246, 243, 249);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 50%;
+  right: 0px;
+  transform: translate(50%, -50%);
+}
+.css-cu2au0.not-applicable .coupon-code {
+  color: rgb(255, 255, 255);
+  padding: 5px 0px;
+}
+.css-5cic0k {
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.css-1j3ll8k .coupon-code-text {
+  font-family: InterSemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.css-1j3ll8k .coupon-code-text > p {
+  font-family: InterRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: rgb(78, 85, 94);
+}
+.css-cu2au0.not-applicable .coupon-description {
+  color: rgb(78, 85, 94);
+}
+.css-1j3ll8k .coupon-description {
+  font-family: InterRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+.css-cu2au0.not-applicable .coupon-code-text {
+  color: rgb(78, 85, 94);
+}
+.modal-apply-coupon {
+  color: #1f3044;
+  font-weight: 800;
+  font-size: 14px;
+}
+.cart-section .billing-section .coupon-code {
+  padding: 10px 20px;
+  background: linear-gradient(#001e38, #00aaff);
+  border-radius: 5px;
+  color: #fff;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-section .billing-section .coupon-code:hover {
+  background: #ed2939;
+}
+.cart-section .cart-billing {
+  width: 100%;
+  padding: 20px;
   border-radius: 25px;
 }
-.cart-section .cart-billing .place-order .checkout {
+.cart-section .place-order {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-section .place-order .checkout {
   width: 100%;
-  background: #001e38;
+  background: linear-gradient(#001e38, #00aaff);
   color: #fff;
   border: 1px solid #001e38;
   padding: 10px;
   border-radius: 5px;
 }
-.cart-section .cart-billing .place-order .checkout:hover {
+.cart-section .place-order .checkout:hover {
   background: #ed2939 !important;
   border: 1px solid #ed2939;
 }
@@ -92,8 +321,37 @@
 }
 .cart-section .cart-billing .price-detail {
   font-size: 14px;
+  padding: 10px;
 }
 .cart-section .cart-billing .price-detail .total-text,
 .cart-section .cart-billing .price-detail .total-price {
   font-size: 16px !important;
+}
+@media (max-width: 768px) {
+  .cart-section .billing-section {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .cart-page {
+    margin: 25px;
+  }
+  .cart .product-detail .expected-date,
+  .cart .product-detail .quantity,
+  .cart .product-detail .gold-purity {
+    font-size: 10px;
+  }
+  .cart .product-detail .product-name,
+  .cart .product-detail .price {
+    font-size: 12px;
+  }
+  .cart .product-detail .sku {
+    font-size: 8px;
+  }
+  .cart .product-image img {
+    height: auto;
+    width: auto;
+  }
 }

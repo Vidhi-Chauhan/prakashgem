@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import { useCart } from "../context/CartContext";
 import "../css/ProductListing.css";
 import Breadcrumbs from "../components/Breadcrumbs";
 
-// Extended product data
 const productsData = [
   {
     id: 1,
-    name: "Rose Gold Ring",
+    name: "Rose  Ring",
     price: "$12",
     imageUrl:
       "https://imgcdn1.gempundit.com/media/testimonials/pictures/1/8/18k-rose-gold-ametrine-ring-100108158-1.jpg?imgeng=/w_687/",
@@ -119,25 +119,15 @@ const productsData = [
 ];
 
 const ProductListing = () => {
-  const itemsPerPage = 8; // Number of items per page
+  const { addToCart } = useCart();
+  const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
-  const [isFilterVisible, setIsFilterVisible] = useState(false);
-  const [filters, setFilters] = useState({
-    minPrice: 0,
-    maxPrice: 5000,
-    sortOrder: "low-to-high",
-  });
-
-  // Calculate the number of pages
   const totalPages = Math.ceil(productsData.length / itemsPerPage);
-
-  // Get the current items to display
   const currentItems = productsData.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
 
-  // Function to handle page change
   const handlePageChange = (page) => {
     if (page > 0 && page <= totalPages) {
       setCurrentPage(page);
@@ -158,6 +148,12 @@ const ProductListing = () => {
               </div>
               <p className="product-name">{product.name}</p>
               <p className="price">{product.price}</p>
+              <button
+                className="add-cart"
+                onClick={() => addToCart(product)} // Add to cart on click
+              >
+                Add To Cart
+              </button>
             </div>
           ))}
         </div>

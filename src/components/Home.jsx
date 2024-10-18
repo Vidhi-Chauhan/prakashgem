@@ -4,11 +4,16 @@ import videoFile from "../assets/videos/jwelleryvideo3.mp4";
 import "../main.js"; // If main.js is one level up
 import connect from "../assets/connect-withus.webp";
 import store from "../assets/Store.webp";
+import { useCart } from "../context/CartContext";
+import career from "../assets/career.jpeg";
 
+import purposegem from "../assets/Gemstones/blue-sapphire/sapphire/blue-gem.webp";
 import HomeSlider from "./HomeSlider";
 import TestimonialSlider from "./TestimonialSlider";
 
 const Home = () => {
+  const { addToCart } = useCart();
+
   const [isActive, setIsActive] = useState(false); // Track if input is active
   const [inputValue, setInputValue] = useState(""); // Track input value
   const [cities] = useState([
@@ -251,9 +256,13 @@ const Home = () => {
           <div className="product-detail">
             <p className="product-name">Multi Monsoon Bracelet</p>
             <p className="price">$120</p>
-            <a href="" className="cart-link">
+            <button
+              href=""
+              className="cart-link"
+              onClick={() => addToCart(product)}
+            >
               Add To Cart
-            </a>
+            </button>
           </div>
         </div>
         <div className="second-product">
@@ -267,9 +276,13 @@ const Home = () => {
             <div className="product-detail">
               <p className="product-name">Multi Monsoon Bracelet</p>
               <p className="price">$120</p>
-              <a href="" className="cart-link">
+              <button
+                href=""
+                className="cart-link"
+                onClick={() => addToCart(product)}
+              >
                 Add To Cart
-              </a>
+              </button>
             </div>
           </div>
           <button className="browse-all mt-8">More Products</button>
@@ -285,9 +298,13 @@ const Home = () => {
           <div className="product-detail">
             <p className="product-name">Multi Monsoon Bracelet</p>
             <p className="price">$120</p>
-            <a href="" className="cart-link">
+            <button
+              href=""
+              className="cart-link"
+              onClick={() => addToCart(product)}
+            >
               Add To Cart
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -327,6 +344,57 @@ const Home = () => {
             src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/Customization/2x.webp"
             alt=""
           />
+        </div>
+      </div>
+      <div className="purpose-gemstone ">
+        <div className="gemstone">
+          <div className="gemstone-title">
+            <h2>Gemstones for Purpose</h2>
+          </div>
+          <div className="gemstone-list my-10">
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />{" "}
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />{" "}
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />{" "}
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+            <div className="list-content">
+              <div className="content">
+                <img className="purpose-img" src={career} alt="" />
+                <img className="purpose-gem" src={purposegem} alt="" />{" "}
+              </div>
+              <p className="purpose">Career</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="banner mt-20">

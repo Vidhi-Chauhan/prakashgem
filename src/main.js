@@ -39,3 +39,12 @@ function changePlaceholder() {
 
 // Change placeholder every second
 setInterval(changePlaceholder, 1000);
+document.addEventListener("keydown", function (event) {
+  const container = document.querySelector(".gemstone-list");
+
+  if (event.key === "ArrowRight") {
+    container.scrollBy({ left: 200, behavior: "smooth" }); // Scroll right
+  } else if (event.key === "ArrowLeft") {
+    container.scrollBy({ left: -200, behavior: "smooth" }); // Scroll left
+  }
+});

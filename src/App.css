@@ -250,6 +250,20 @@ h2:before {
 .main-menu .menu-list {
   justify-content: center;
 }
+.add-cart {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-cart.added {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.add-cart.added:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
 .main-menu .menu-list .menu-item {
   color: #1f3044;
   font-size: 14px;
@@ -499,6 +513,95 @@ button.css-1jtjfof.e9xkah24:hover {
     width: 110%;
   }
 }
+.purpose-gemstone {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+}
+.purpose-gemstone .list-content {
+  padding: 0 20px;
+  cursor: pointer;
+  display: inline-block; /* Ensure each list item is inline */
+  margin-right: 10px;
+}
+.gemstone-list {
+  overflow: hidden;
+  overflow-x: auto;
+}
+/* SplashScreen.css */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Background color */
+  z-index: 9999; /* Overlay */
+}
+
+.colorful-title {
+  font-size: 3rem; /* Adjust size */
+  color: transparent; /* Make text transparent initially */
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #00f0ff,
+    #80ff00,
+    #ff8c00
+  ); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+}
+
+.prakash,
+.gems {
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Start slightly lower */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.prakash.visible,
+.gems.visible {
+  opacity: 1; /* Make text visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* Optional: Add blinking effect if desired */
+.blinking {
+  animation: blink-animation 1s steps(2, start) infinite; /* Blinking animation */
+}
+
+@keyframes blink-animation {
+  0%,
+  100% {
+    visibility: visible; /* Show element */
+  }
+  50% {
+    visibility: hidden; /* Hide element */
+  }
+}
+
+.gemstone-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+.purpose-gemstone .list-content:hover .purpose-gem {
+  display: block !important;
+}
+.purpose-gemstone .list-content:hover .purpose-img {
+  display: none !important;
+}
+.purpose-gemstone .purpose-gem {
+  display: none;
+}
+.purpose-gemstone .list-content img {
+  border-radius: 50%;
+  height: 132px;
+}
 @media screen and (max-width: 1440px) {
   .css-17jzvjd {
     width: 100%;
@@ -509,6 +612,7 @@ button.css-1jtjfof.e9xkah24:hover {
   display: flex;
   flex-direction: column;
 }
+
 .css-lmc5zi {
   max-height: 48px;
   display: flex;
@@ -1085,9 +1189,6 @@ button.browse-all:hover {
 }
 
 @media (max-width: 600px) {
-  .cart-section .cart-billing {
-    height: 270px !important;
-  }
   .cart-section .cart-billing .coupon-code button {
     margin-top: 5px;
   }
@@ -1117,9 +1218,6 @@ button.browse-all:hover {
 @media (min-width: 800px) and (max-width: 1100px) {
   .cart-section .cart-billing .coupon-code button {
     margin-top: 5px;
-  }
-  .cart-section .cart-billing {
-    height: 280px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 900px) {
